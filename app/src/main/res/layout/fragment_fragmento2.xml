@@ -6,6 +6,14 @@
     tools:context=".fragmentos.Fragmento2">
 
     <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center|right"
+        android:text="Alert Dialog" />
+
     <TextView
         android:id="@+id/tvMensaje"
         android:layout_width="match_parent"

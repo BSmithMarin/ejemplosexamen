@@ -6,15 +6,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.ejemplosexamen.R;
 
 
 
-public class Fragmento1 extends Fragment {
+public class Fragmento1 extends Fragment implements View.OnClickListener{
+
+    Button btnToast = null;
 
     public Fragmento1() {
         // Required empty public constructor
@@ -37,5 +42,17 @@ public class Fragmento1 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        btnToast = view.findViewById(R.id.btnToast);
+        btnToast.setOnClickListener(this);
     }
+
+    @Override
+    public void onClick(View v) {
+        if (v == btnToast) {
+            Toast toast = Toast.makeText(requireActivity().getApplicationContext(), "Mensaje Toast", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.TOP, 0, 0);
+            toast.show();
+        }
+    }
+
 }
