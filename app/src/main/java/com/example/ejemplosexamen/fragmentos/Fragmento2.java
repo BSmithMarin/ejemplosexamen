@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ejemplosexamen.R;
 
@@ -55,9 +56,15 @@ public class Fragmento2 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
 
         if ( v == btnAlertDialog ){
+
+            LayoutInflater inflater = requireActivity().getLayoutInflater();
+
+            View alertPersonalizdo = inflater.inflate(R.layout.dialogo_personalizado,null);
+
             AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
                 builder.setMessage("Mensaje Dialogo");
                 builder.setTitle("TITULO TODO MOLON");
+                builder.setView(alertPersonalizdo);
                 builder.setIcon(R.drawable.ic_logoipsum_logo_15);
             builder.setPositiveButton("Aceptar",new DialogInterface.OnClickListener(){
                 @Override
@@ -74,8 +81,11 @@ public class Fragmento2 extends Fragment implements View.OnClickListener{
             });
             //Con lambdas
             builder.setNeutralButton("Ignorar", (dialog, which) -> tvMensaje.setText("Pulsado boton NEUTRAL"));
-
-
+            //Control del boton interno
+            Button btnHola = alertPersonalizdo.findViewById(R.id.btbAlerta);
+            btnHola.setOnClickListener((View click)->{
+                Toast.makeText(requireContext(),"HOLAAAA",Toast.LENGTH_SHORT).show();
+            });
             //Crea y muestra venta de dialogo
             AlertDialog dialogo = builder.create();
             dialogo.show();
