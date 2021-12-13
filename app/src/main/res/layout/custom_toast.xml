@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_toast_shape">
+
+    <ImageView
+        android:id="@+id/img_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_logoipsum_logo_15"
+        />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ERROR"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        />
+</LinearLayout>

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/AlumnoDAM/AndroidStudioProjects/ejemplosexamen/app/src/main/res/drawable/custom_toast_shape.xml" value="0.2890625" />
+        <entry key="..\:/Users/AlumnoDAM/AndroidStudioProjects/ejemplosexamen/app/src/main/res/drawable/ic_logoipsum_logo_15.xml" value="0.2890625" />
+        <entry key="..\:/Users/AlumnoDAM/AndroidStudioProjects/ejemplosexamen/app/src/main/res/layout/custom_toast.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/brahy/AndroidStudioProjects/EjemplosExamen/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/brahy/AndroidStudioProjects/EjemplosExamen/app/src/main/res/layout/activity_segunda_actividad.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/brahy/AndroidStudioProjects/EjemplosExamen/app/src/main/res/layout/fragment_fragmento1.xml" value="0.36666666666666664" />
