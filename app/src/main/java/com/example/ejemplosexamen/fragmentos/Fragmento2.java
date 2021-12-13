@@ -58,7 +58,7 @@ public class Fragmento2 extends Fragment implements View.OnClickListener{
             AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
                 builder.setMessage("Mensaje Dialogo");
                 builder.setTitle("TITULO TODO MOLON");
-                builder.setIcon(R.drawable.ic_launcher_foreground);
+                builder.setIcon(R.drawable.ic_logoipsum_logo_15);
             builder.setPositiveButton("Aceptar",new DialogInterface.OnClickListener(){
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

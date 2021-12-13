@@ -49,12 +49,12 @@ public class Fragmento1 extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if (v == btnToast) {//Toas por defecto
+        if (v == btnToast) {
+            toastPersonalizado(); //Ejecucion de ambos toast simultaneos
+            //Toas por defecto
             Toast toast = Toast.makeText(requireActivity().getApplicationContext(), "Mensaje Toast", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.TOP, 0, 0);
             toast.show();
-
-            toastPersonalizado(); //Ejecucion de ambos toast simultaneos
         }
     }
 
