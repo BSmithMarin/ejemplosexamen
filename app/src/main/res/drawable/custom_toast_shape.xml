@@ -11,8 +11,8 @@
             android:left="10dp"
             android:right="10dp"/>
             <gradient
-            android:startColor="#24C6DC"
-            android:endColor="#80FF00FF"
+            android:startColor="#360033"
+            android:endColor="#0B8793"
             android:angle="45"/>
             <stroke
                 android:color="#000000"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/custom_toast_shape">
@@ -12,7 +12,7 @@
         android:layout_marginHorizontal="45dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/ic_logoipsum_logo_15"
-        />
+        android:contentDescription="LOGO" />
     <TextView
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
@@ -21,6 +21,6 @@
         android:textSize="20sp"
         android:layout_marginHorizontal="45dp"
         android:layout_marginTop="15dp"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         />
 </LinearLayout>
